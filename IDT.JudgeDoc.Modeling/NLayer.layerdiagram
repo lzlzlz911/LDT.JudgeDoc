@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bda19900-bfb3-4325-b216-921abced1a43" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="bde2d6f3-1a16-4d74-b8bd-889537d4a958" name="DAL&#xD;&#xA;持久层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="033cb76d-2c05-434e-b925-1a9ba522d7cf" direction="Forward">
+          <layerMoniker Id="323f6663-1b13-4d37-937e-4aadf6138360" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="54118684-19fe-4b0b-9452-9551a0e11567" direction="Forward">
+          <layerMoniker Id="bdb59250-d041-4ee9-acd4-6dcc6ce9aab7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="c5e1c036-521b-472b-9532-a0c281583ff3" name="IDT.JudgeDoc.IDAL.dll1">
+          <ArtifactNode Label="IDT.JudgeDoc.IDAL.dll" Category="CodeSchema_Assembly" Id="(Assembly=IDT.JudgeDoc.IDAL)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.IDAL)" Label="IDT.JudgeDoc.IDAL.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="24100f35-728d-4f43-8dea-e76b6860d11f" name="IDT.JudgeDoc.DAL.Dapper">
+          <ArtifactNode Label="IDT.JudgeDoc.DAL.Dapper" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.DAL/IDT.JudgeDoc.DAL.Dapper.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.DAL)" Label="IDT.JudgeDoc.DAL.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="8cba347e-7df9-49c9-96ef-c71c71bfd50b" name="BLL&#xD;&#xA;业务层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ef769046-1f4f-49a4-b8ff-c05ed82339d0" direction="Forward">
+          <layerMoniker Id="323f6663-1b13-4d37-937e-4aadf6138360" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="8ca96e54-8808-45f7-8de8-201629d1ac59" direction="Forward">
+          <layerMoniker Id="bdb59250-d041-4ee9-acd4-6dcc6ce9aab7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="05c20e31-47ab-48e8-91b9-221d6a27a3de" direction="Forward">
+          <layerMoniker Id="bde2d6f3-1a16-4d74-b8bd-889537d4a958" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="00752aac-3b7d-4692-acd3-68fa6cc130b1" name="IDT.JudgeDoc.BLL">
+          <ArtifactNode Label="IDT.JudgeDoc.BLL" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.BLL/IDT.JudgeDoc.BLL.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.BLL)" Label="IDT.JudgeDoc.BLL.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="bdb59250-d041-4ee9-acd4-6dcc6ce9aab7" name="Model&#xD;&#xA;模型层">
+      <references>
+        <reference Id="4e07877c-6cf4-41b8-9023-aadd910bc1b7" name="IDT.JudgeDoc.Model">
+          <ArtifactNode Label="IDT.JudgeDoc.Model" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.Modeling.Model/IDT.JudgeDoc.Model.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Modeling.Model)" Label="IDT.JudgeDoc.Modeling.Model.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="a0e05d8d-8994-47a3-97f1-77105d7bb1f8" name="Service&#xD;&#xA;服务层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1fd038ea-6fdb-4379-bcc0-7b3a09989f1c" direction="Forward">
+          <layerMoniker Id="14dc068c-cd80-41bc-ad8a-d725b3474c02" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="02bdc753-48a2-4cd5-bcfc-31d22c94600b" name="IDT.JudgeDoc.Contract.Web">
+          <ArtifactNode Label="IDT.JudgeDoc.Contract.Web" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.IContract/IDT.JudgeDoc.Contract.Web.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.IContract)" Label="IDT.JudgeDoc.IContract.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="520a014f-06a9-4f95-a6bb-f8eb6b801810" name="IDT.JudgeDoc.Service.Web">
+          <ArtifactNode Label="IDT.JudgeDoc.Service.Web" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.Service/IDT.JudgeDoc.Service.Web.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Service)" Label="IDT.JudgeDoc.Service.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="09b83d2e-31ce-4918-83bb-351e70ad3b27" name="UI&#xD;&#xA;用户界面层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a7f18fce-4a31-4081-92cc-e137f9d70a62" direction="Forward">
+          <layerMoniker Id="a0e05d8d-8994-47a3-97f1-77105d7bb1f8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="7c64dead-29b6-470e-9b3c-7e9ef0ed46c0" name="IDT.JudgeDoc.WebUI">
+          <ArtifactNode Label="IDT.JudgeDoc.WebUI" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.WebUI/IDT.JudgeDoc.WebUI.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.WebUI)" Label="IDT.JudgeDoc.WebUI.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="323f6663-1b13-4d37-937e-4aadf6138360" name="Infrastructure&#xD;&#xA;基础设施层">
+      <references>
+        <reference Id="8bd5336a-1955-47c1-a151-e3cb1a334ce0" name="Service">
+          <ArtifactNode Label="Service" Category="SolutionFolder" Id="(Assembly=../Infrastructure/Service)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Modeling.InfrastructureProvider)" Label="IDT.JudgeDoc.Modeling.InfrastructureProvider.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="119ce2de-d54b-4449-b9f5-ce26128ececd" name="Common">
+          <ArtifactNode Label="Common" Category="SolutionFolder" Id="(Assembly=../Infrastructure/Common)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Modeling.Common)" Label="IDT.JudgeDoc.Modeling.Common.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="77f85942-bc88-44e3-a634-a76aa7b92a09" name="DLLs">
+          <ArtifactNode Label="DLLs" Category="SolutionFolder" Id="(Assembly=../Infrastructure/DLLs)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Modeling.Logging)" Label="IDT.JudgeDoc.Modeling.Logging.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="3a7f1e70-d28e-4301-9ef0-1c880eaba042" name="BLL Facade/Service&#xD;&#xA;外观层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="49a89ec1-e9d4-4d68-b382-031d9b657d79" direction="Forward">
+          <layerMoniker Id="323f6663-1b13-4d37-937e-4aadf6138360" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="cfe7bb4e-a756-44e0-b54b-12871883e057" direction="Forward">
+          <layerMoniker Id="8cba347e-7df9-49c9-96ef-c71c71bfd50b" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="8493c0ab-482d-49b7-84ef-ef942ba6c1e6" direction="Forward">
+          <layerMoniker Id="bdb59250-d041-4ee9-acd4-6dcc6ce9aab7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="060f4adb-5a58-48f1-9425-291e40a6df03" name="IDT.JudgeDoc.BLL.Facade.dll">
+          <ArtifactNode Label="IDT.JudgeDoc.BLL.Facade.dll" Category="CodeSchema_Assembly" Id="(Assembly=IDT.JudgeDoc.BLL.Facade)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.BLL.Facade)" Label="IDT.JudgeDoc.BLL.Facade.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="14dc068c-cd80-41bc-ad8a-d725b3474c02" name="Application应用层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c1a2269a-a49b-45a0-b7d1-74daf7ffccec" direction="Forward">
+          <layerMoniker Id="8cba347e-7df9-49c9-96ef-c71c71bfd50b" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="faf72dd8-6014-49ad-8b8f-8982e543a477" direction="Forward">
+          <layerMoniker Id="3a7f1e70-d28e-4301-9ef0-1c880eaba042" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="901a7ec0-0b3d-4410-ac91-feadb7eea578" direction="Forward">
+          <layerMoniker Id="bdb59250-d041-4ee9-acd4-6dcc6ce9aab7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="42db69b9-1026-44ac-a8ed-d5c408ccb9d7" direction="Forward">
+          <layerMoniker Id="323f6663-1b13-4d37-937e-4aadf6138360" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="eb56c993-5c09-463e-a7bf-30844e853c49" name="IDT.JudgeDoc.Application">
+          <ArtifactNode Label="IDT.JudgeDoc.Application" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.Application/IDT.JudgeDoc.Application.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.Application)" Label="IDT.JudgeDoc.Application.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="ed3990f3-0411-490a-9523-60ee52a7fd25" name="IDT.JudgeDoc.DTO.Web">
+          <ArtifactNode Label="IDT.JudgeDoc.DTO.Web" Category="CodeSchema_Project" Id="(Assembly=../IDT.JudgeDoc.DTO/IDT.JudgeDoc.DTO.Web.csproj)" />
+          <ExpandedNode Id="(Assembly=IDT.JudgeDoc.DTO)" Label="IDT.JudgeDoc.DTO.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

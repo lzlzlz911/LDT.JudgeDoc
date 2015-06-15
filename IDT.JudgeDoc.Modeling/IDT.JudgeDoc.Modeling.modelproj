@@ -22,9 +22,67 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="UMLComponentDiagram1.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\IDT.JudgeDoc.Modeling.uml">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="NLayer.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="NLayer.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NLayer.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="NLayer.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>NLayer.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDT.JudgeDoc.Application\IDT.JudgeDoc.Application.csproj">
+      <Name>IDT.JudgeDoc.Application</Name>
+      <Project>{c83f06e6-b018-45cd-93de-144cdabba93f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.BLL.Facade\IDT.JudgeDoc.BLL.Facade.csproj">
+      <Name>IDT.JudgeDoc.BLL.Facade</Name>
+      <Project>{d29d6976-0d84-42e1-afd0-c655be99b0f1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.BLL\IDT.JudgeDoc.BLL.csproj">
+      <Name>IDT.JudgeDoc.BLL</Name>
+      <Project>{874b56b9-4c9a-497a-ad46-90a2327079b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.DAL\IDT.JudgeDoc.DAL.Dapper.csproj">
+      <Name>IDT.JudgeDoc.DAL.Dapper</Name>
+      <Project>{ab9ed39f-cb58-49a9-8c6f-4457335337e2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.DTO\IDT.JudgeDoc.DTO.Web.csproj">
+      <Name>IDT.JudgeDoc.DTO.Web</Name>
+      <Project>{2a1ec15d-cd71-4f60-894a-8b237607e961}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.IContract\IDT.JudgeDoc.Contract.Web.csproj">
+      <Name>IDT.JudgeDoc.Contract.Web</Name>
+      <Project>{9896737d-0a83-488a-929b-b4a770b491fa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.IDAL\IDT.JudgeDoc.IDAL.csproj">
+      <Name>IDT.JudgeDoc.IDAL</Name>
+      <Project>{d3f510cf-396f-4775-8617-804656f91d98}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.Service\IDT.JudgeDoc.Service.Web.csproj">
+      <Name>IDT.JudgeDoc.Service.Web</Name>
+      <Project>{990fa461-411d-4e84-901f-5c54faf4902c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IDT.JudgeDoc.WebUI\IDT.JudgeDoc.WebUI.csproj">
+      <Name>IDT.JudgeDoc.WebUI</Name>
+      <Project>{52e6a07a-3307-45a5-99c5-910366c4c153}</Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>
