@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace IDT.JudgeDoc.DAL.Test {
     class Program {
         static void Main(string[] args) {
-            new UserTest().QueryUser();
+            //new UserTest().QueryUser();
             Console.Read();
         }
     }
